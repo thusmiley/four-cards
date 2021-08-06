@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap')
+
+$red: hsl(0, 78%, 62%)
+$cyan: hsl(180, 62%, 55%)
+$orange: hsl(34, 97%, 64%)
+$blue: hsl(212, 86%, 64%)   
+$light-grey: hsl(0, 0%, 98%) 
+$heading: hsl(234, 12%, 34%)
+$body: hsl(229, 6%, 66%)
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0    
+
+body
+    font-family: 'Poppins', sans-serif
+    height: 100vh
+    font-size: 12px
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $body
+
+.header
+    text-align: center
+
+h1
+    font-weight: lighter
+    color: $heading    
+    font-size: 30px
+
+h2
+    color: $heading
+    font-size: 30px
+p
+    width: 42%
+    display: inline-block
+    margin: 15px 0px 40px 0px
+
+.cards
+    display: flex
+    flex-direction: row
+    height: auto
+    align-items: center
+    // background-color: pink
+    width: 100%
+
+.title
+    font-size: 14px
+    font-weight: bold
+    color: $heading
+    margin-bottom: 15px
+
+.card 
+    border: solid 2px $light-grey
+    box-shadow: 0px 5px 15px 5px $light-grey
+    margin: 10px
+    width: 250px
+    height: 180px
+    padding: 20px
+
+.card1
+    border-top: solid 3px $cyan
+    background: url("./images/icon-supervisor.svg")  bottom 30px right 30px no-repeat
+    background-size: 40px
+    
+
+.card2
+    border-top: solid 3px $red
+    width: 250px
+    background: url("./images/icon-team-builder.svg")  bottom 30px right 30px no-repeat
+    background-size: 40px
+
+
+.card3
+    border-top: solid 3px $orange
+    width: 250px
+    margin-top: 20px
+    background: url("./images/icon-karma.svg")  bottom 30px right 30px no-repeat
+    background-size: 40px
+
+
+.card4
+    border-top: solid 3px $blue
+    background: url("./images/icon-calculator.svg")  bottom 30px right 30px no-repeat
+    background-size: 40px
+
+@media (max-width: 800px)
+    body
+        height: auto
+
+    .container
+        margin: 40px
+
+    p
+        width: auto    
+
+    .cards
+        display: flex
+        flex-direction: column
+
+   
